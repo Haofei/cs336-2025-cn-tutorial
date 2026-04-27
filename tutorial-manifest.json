@@ -1,0 +1,145 @@
+{
+  "source_course": "Stanford CS336 Language Modeling from Scratch 2025",
+  "source_playlist": "https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_",
+  "generated_at": "2026-04-26",
+  "lecture_count": 17,
+  "total_cjk_chars": 51980,
+  "lectures": [
+    {
+      "file": "01-overview-and-tokenization.md",
+      "title": "CS336 2025 第 1 讲教程：课程概览与 Tokenization（分词/标记化）",
+      "cjk": 3401,
+      "video_id": "SQ3fZ1sAqXI",
+      "url": "https://www.youtube.com/watch?v=SQ3fZ1sAqXI",
+      "duration": "1:18:55"
+    },
+    {
+      "file": "02-pytorch-resource-accounting.md",
+      "title": "Stanford CS336 2025 第 2 讲教程：PyTorch 与资源核算",
+      "cjk": 3003,
+      "video_id": "msHyYioAyNE",
+      "url": "https://www.youtube.com/watch?v=msHyYioAyNE",
+      "duration": "1:19:18"
+    },
+    {
+      "file": "03-architectures-hyperparameters.md",
+      "title": "CS336 2025 第 3 讲中文教程：Transformer 架构与超参数",
+      "cjk": 3213,
+      "video_id": "ptFiH_bHnJw",
+      "url": "https://www.youtube.com/watch?v=ptFiH_bHnJw",
+      "duration": "1:26:59"
+    },
+    {
+      "file": "04-mixture-of-experts.md",
+      "title": "Stanford CS336 第 4 讲教程：Mixture of Experts（MoE）",
+      "cjk": 3026,
+      "video_id": "LPv1KfUXLCo",
+      "url": "https://www.youtube.com/watch?v=LPv1KfUXLCo",
+      "duration": "1:22:00"
+    },
+    {
+      "file": "05-gpus.md",
+      "title": "Stanford CS336 Lecture 5：GPU 中文教程",
+      "cjk": 3038,
+      "video_id": "6OBtO9niT00",
+      "url": "https://www.youtube.com/watch?v=6OBtO9niT00",
+      "duration": "1:14:17"
+    },
+    {
+      "file": "06-kernels-triton.md",
+      "title": "Stanford CS336 2025 第 6 讲教程：Kernel、Triton 与 LLM 算子优化",
+      "cjk": 3001,
+      "video_id": "E8Mju53VB00",
+      "url": "https://www.youtube.com/watch?v=E8Mju53VB00",
+      "duration": "1:20:18"
+    },
+    {
+      "file": "07-parallelism-1.md",
+      "title": "Stanford CS336 Lecture 7 中文教程：Parallelism 1",
+      "cjk": 3005,
+      "video_id": "l1RJcDjzK8M",
+      "url": "https://www.youtube.com/watch?v=l1RJcDjzK8M",
+      "duration": "1:24:39"
+    },
+    {
+      "file": "08-parallelism-2.md",
+      "title": "Stanford CS336 Lecture 8：并行训练（二）中文教程",
+      "cjk": 3001,
+      "video_id": "LHpr5ytssLo",
+      "url": "https://www.youtube.com/watch?v=LHpr5ytssLo",
+      "duration": "1:15:06"
+    },
+    {
+      "file": "09-scaling-laws-1.md",
+      "title": "CS336 第 9 讲教程：Scaling Laws（一）",
+      "cjk": 3001,
+      "video_id": "6Q-ESEmDf4Q",
+      "url": "https://www.youtube.com/watch?v=6Q-ESEmDf4Q",
+      "duration": "1:05:15"
+    },
+    {
+      "file": "10-inference.md",
+      "title": "Stanford CS336 Lecture 10：LLM Inference 中文教程",
+      "cjk": 3058,
+      "video_id": "fcgPYo3OtV0",
+      "url": "https://www.youtube.com/watch?v=fcgPYo3OtV0",
+      "duration": "1:22:48"
+    },
+    {
+      "file": "11-scaling-laws-2.md",
+      "title": "CS336 第 11 讲教程：Scaling Laws（二）",
+      "cjk": 3024,
+      "video_id": "OSYuUqGBQxw",
+      "url": "https://www.youtube.com/watch?v=OSYuUqGBQxw",
+      "duration": "1:18:10"
+    },
+    {
+      "file": "12-evaluation.md",
+      "title": "CS336 Lecture 12 中文教程：LLM Evaluation",
+      "cjk": 3004,
+      "video_id": "x-R5l2HsXqM",
+      "url": "https://www.youtube.com/watch?v=x-R5l2HsXqM",
+      "duration": "1:20:45"
+    },
+    {
+      "file": "13-data-1.md",
+      "title": "Stanford CS336 Lecture 13 教程：预训练数据（Data 1）",
+      "cjk": 3046,
+      "video_id": "WePxmeXU1xg",
+      "url": "https://www.youtube.com/watch?v=WePxmeXU1xg",
+      "duration": "1:19:02"
+    },
+    {
+      "file": "14-data-2.md",
+      "title": "Stanford CS336 Lecture 14：数据（二）——从原始网页到可训练语料",
+      "cjk": 3038,
+      "video_id": "9Cd0THLS1t0",
+      "url": "https://www.youtube.com/watch?v=9Cd0THLS1t0",
+      "duration": "1:19:08"
+    },
+    {
+      "file": "15-alignment-sft-rlhf.md",
+      "title": "CS336 Lecture 15 中文教程：Alignment、SFT 与 RLHF",
+      "cjk": 3076,
+      "video_id": "Dfu7vC9jo4w",
+      "url": "https://www.youtube.com/watch?v=Dfu7vC9jo4w",
+      "duration": "1:14:47"
+    },
+    {
+      "file": "16-alignment-rl-1.md",
+      "title": "Stanford CS336 Lecture 16 中文教程：Alignment 中的强化学习（一）",
+      "cjk": 3035,
+      "video_id": "46f2QTDB08Q",
+      "url": "https://www.youtube.com/watch?v=46f2QTDB08Q",
+      "duration": "1:20:29"
+    },
+    {
+      "file": "17-alignment-rl-2.md",
+      "title": "Stanford CS336 第 17 讲：Alignment - RL 2 中文教程",
+      "cjk": 3010,
+      "video_id": "JdGFdViaOJk",
+      "url": "https://www.youtube.com/watch?v=JdGFdViaOJk",
+      "duration": "1:16:04"
+    }
+  ]
+}

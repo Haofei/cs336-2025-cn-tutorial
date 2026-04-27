@@ -1,0 +1,25 @@
+# Glossary / 术语表
+
+- **Tokenization**: 分词/标记化：把原始文本切成模型可处理的 token 序列。
+- **BPE**: Byte Pair Encoding：常见子词 tokenizer 训练算法。
+- **Transformer**: 以 self-attention 和 MLP block 为核心的序列模型架构。
+- **FLOPs**: 浮点运算次数，用于估算训练/推理计算量。
+- **MFU**: Model FLOPs Utilization，衡量模型训练实际利用硬件峰值算力的比例。
+- **HBM**: High Bandwidth Memory，GPU 显存，带宽高但访问仍昂贵。
+- **Kernel**: GPU 上执行的并行函数。
+- **Triton**: 用于编写 GPU kernel 的 Python DSL。
+- **FlashAttention**: IO-aware attention 实现，减少 attention 中间矩阵的 HBM 读写。
+- **MoE**: Mixture of Experts，用 router 为 token 选择部分 expert 计算。
+- **FSDP**: Fully Sharded Data Parallel，把参数、梯度和 optimizer state 分片到多个 GPU。
+- **Tensor Parallelism**: 把单层矩阵计算切到多个 GPU 上并行。
+- **Pipeline Parallelism**: 把模型层切到不同 GPU 上，以 microbatch 流水执行。
+- **Scaling Laws**: 描述 loss 与模型规模、数据量、算力之间关系的经验规律。
+- **KV Cache**: 推理 decode 阶段缓存每层 K/V，避免重复计算历史 token。
+- **Perplexity**: 困惑度，语言模型负 log-likelihood 的指数形式。
+- **Contamination**: 评估集内容泄漏进训练数据，导致评估虚高。
+- **SFT**: Supervised Fine-Tuning，用指令-回答数据监督微调。
+- **RLHF**: Reinforcement Learning from Human Feedback，基于人类偏好训练 reward model 并优化策略。
+- **DPO**: Direct Preference Optimization，直接用偏好对优化 policy 的方法。
+- **PPO**: Proximal Policy Optimization，RLHF 中常用稳定策略优化算法。
+- **GRPO**: Group Relative Policy Optimization，用组内相对奖励估计 advantage 的 RL 方法。
+- **RLVR**: Reinforcement Learning with Verifiable Rewards，使用可验证奖励训练推理能力。
