@@ -141,5 +141,15 @@
       "url": "https://www.youtube.com/watch?v=JdGFdViaOJk",
       "duration": "1:16:04"
     }
-  ]
+  ],
+  "languages": {
+    "zh": "docs/lectures",
+    "en": "docs/en/lectures",
+    "ja": "docs/ja/lectures"
+  },
+  "complete_tutorials": {
+    "zh": "docs/CS336-2025-complete-tutorial.md",
+    "en": "docs/en/CS336-2025-complete-tutorial-en.md",
+    "ja": "docs/ja/CS336-2025-complete-tutorial-ja.md"
+  }
 }

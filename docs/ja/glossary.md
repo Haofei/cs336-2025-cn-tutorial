@@ -1,0 +1,25 @@
+# 用語集
+
+- **Tokenization**: 生テキストをモデルが扱える token ID 列へ変換する処理。
+- **BPE**: Byte Pair Encoding。よく使われる subword tokenizer の学習アルゴリズム。
+- **Transformer**: self-attention と MLP block を中心とする系列モデル architecture。
+- **FLOPs**: 浮動小数点演算回数。計算コストを見積もる単位。
+- **MFU**: Model FLOPs Utilization。ハードウェアのピーク計算性能をどれだけ使えているか。
+- **HBM**: High Bandwidth Memory。GPU 上の高帯域メモリだが、アクセスは依然として高コスト。
+- **Kernel**: GPU 上で実行される並列関数。
+- **Triton**: GPU kernel を書くための Python DSL。
+- **FlashAttention**: HBM への読み書きを減らす IO-aware な attention 実装。
+- **MoE**: Mixture of Experts。各 token を一部の expert network に routing する方式。
+- **FSDP**: Fully Sharded Data Parallel。parameter、gradient、optimizer state を分割配置する方式。
+- **Tensor Parallelism**: 1つの layer 内の tensor operation を複数 device に分割する並列化。
+- **Pipeline Parallelism**: model layer を device 間で分割し、microbatch を pipeline として流す方式。
+- **Scaling Laws**: loss、model size、data size、compute の経験的関係。
+- **KV Cache**: autoregressive decoding 中に保存する key/value cache。
+- **Perplexity**: language modeling における negative log-likelihood の指数形式。
+- **Contamination**: 評価データが学習データに混入し、benchmark score が過大評価される問題。
+- **SFT**: instruction-response data による supervised fine-tuning。
+- **RLHF**: Human feedback に基づく reinforcement learning。
+- **DPO**: Direct Preference Optimization。RLHF の代替となる preference optimization 手法。
+- **PPO**: Proximal Policy Optimization。RLHF でよく使われる policy optimization 手法。
+- **GRPO**: Group Relative Policy Optimization。グループ内の相対 reward/advantage を使う手法。
+- **RLVR**: Verifiable reward を用いる reinforcement learning。

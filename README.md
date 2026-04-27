@@ -7,6 +7,12 @@
 > Source course: https://stanford-cs336.github.io/  
 > YouTube playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_
 
+## Languages / 语言 / 言語
+
+- 中文: [README](README.md), [完整教程](docs/CS336-2025-complete-tutorial.md)
+- English: [README](docs/en/README.md), [Complete tutorial](docs/en/CS336-2025-complete-tutorial-en.md)
+- 日本語: [README](docs/ja/README.md), [完全チュートリアル](docs/ja/CS336-2025-complete-tutorial-ja.md)
+
 ## 适合谁
 
 - 想系统学习 LLM pretraining / inference / evaluation / data / alignment 的同学

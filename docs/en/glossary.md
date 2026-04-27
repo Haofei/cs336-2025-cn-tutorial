@@ -1,0 +1,25 @@
+# Glossary
+
+- **Tokenization**: Splitting raw text into token IDs that a model can process.
+- **BPE**: Byte Pair Encoding, a common subword tokenizer training algorithm.
+- **Transformer**: Sequence model architecture built around self-attention and MLP blocks.
+- **FLOPs**: Floating-point operations; a unit for estimating compute cost.
+- **MFU**: Model FLOPs Utilization; how much of peak hardware compute is actually used.
+- **HBM**: High Bandwidth Memory; GPU memory with high bandwidth but still costly access.
+- **Kernel**: A parallel function executed on a GPU.
+- **Triton**: A Python DSL for writing GPU kernels.
+- **FlashAttention**: An IO-aware attention implementation that reduces HBM traffic.
+- **MoE**: Mixture of Experts; routes each token to a subset of expert networks.
+- **FSDP**: Fully Sharded Data Parallel; shards parameters, gradients, and optimizer states.
+- **Tensor Parallelism**: Splitting tensor operations within a layer across devices.
+- **Pipeline Parallelism**: Splitting model layers across devices and running microbatches as a pipeline.
+- **Scaling Laws**: Empirical relationships between loss, model size, data size, and compute.
+- **KV Cache**: Cached keys/values used during autoregressive decoding.
+- **Perplexity**: Exponentiated negative log-likelihood for language modeling.
+- **Contamination**: Evaluation data leaking into training data, inflating benchmark scores.
+- **SFT**: Supervised Fine-Tuning on instruction-response data.
+- **RLHF**: Reinforcement Learning from Human Feedback.
+- **DPO**: Direct Preference Optimization, a preference-optimization alternative to RLHF.
+- **PPO**: Proximal Policy Optimization, commonly used in RLHF.
+- **GRPO**: Group Relative Policy Optimization; uses group-relative rewards/advantages.
+- **RLVR**: Reinforcement Learning with Verifiable Rewards.
