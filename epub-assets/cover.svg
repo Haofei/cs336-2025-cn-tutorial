@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+  <defs>
+    <pattern id="paper" width="96" height="96" patternUnits="userSpaceOnUse">
+      <rect width="96" height="96" fill="#f5f0e4"/>
+      <path d="M0 17h96M0 64h96M23 0v96M76 0v96" stroke="#d7ccb8" stroke-width="1" opacity="0.16"/>
+      <circle cx="18" cy="29" r="1.1" fill="#c7bca8" opacity="0.25"/>
+      <circle cx="70" cy="79" r="0.9" fill="#c7bca8" opacity="0.22"/>
+    </pattern>
+    <style>
+      .sans { font-family: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Heiti SC", sans-serif; }
+      .serif { font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", serif; }
+      .mono { font-family: "SFMono-Regular", "Menlo", "Consolas", monospace; }
+      .ink { stroke: #17212b; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .fine { stroke-width: 2; }
+      .mid { stroke-width: 4; }
+      .heavy { stroke-width: 7; }
+      .hair { stroke-width: 1.2; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="2400" fill="url(#paper)"/>
+  <rect x="90" y="86" width="1420" height="2228" fill="none" stroke="#17212b" stroke-width="2.5"/>
+  <rect x="90" y="86" width="1420" height="292" fill="#b64b37"/>
+  <rect x="90" y="378" width="1420" height="12" fill="#17212b"/>
+  <rect x="90" y="2026" width="1420" height="288" fill="#17212b"/>
+
+  <text x="156" y="196" fill="#fff8e9" class="sans" font-size="48" font-weight="700" letter-spacing="2">工程视角 · 从机制到系统</text>
+  <text x="156" y="282" fill="#f5dcc4" class="mono" font-size="34">tokens / tensors / training / inference / alignment</text>
+
+  <text x="154" y="525" fill="#17212b" class="serif" font-size="150" font-weight="700">从零理解</text>
+  <text x="154" y="692" fill="#17212b" class="serif" font-size="150" font-weight="700">语言模型</text>
+  <text x="160" y="774" fill="#56616b" class="sans" font-size="43">从 token 到训练、推理、评估与对齐</text>
+
+  <!-- Original natural-history style engraving: an owl formed from token tiles and attention arcs. -->
+  <g transform="translate(0,12)">
+    <ellipse cx="800" cy="1542" rx="372" ry="82" fill="#d5cab3" opacity="0.42"/>
+
+    <path class="ink heavy" d="M506 1286c0-229 132-389 294-389s294 160 294 389c0 207-121 331-294 331s-294-124-294-331z"/>
+    <path class="ink heavy" d="M536 1048c-58-84-75-154-54-214 74 18 139 62 194 132"/>
+    <path class="ink heavy" d="M1064 1048c58-84 75-154 54-214-74 18-139 62-194 132"/>
+    <path class="ink mid" d="M628 1007c49-61 107-92 172-92s123 31 172 92"/>
+    <path class="ink mid" d="M600 1217c52-79 119-119 200-119s148 40 200 119"/>
+
+    <circle cx="690" cy="1195" r="98" fill="#f5f0e4" stroke="#17212b" stroke-width="5"/>
+    <circle cx="910" cy="1195" r="98" fill="#f5f0e4" stroke="#17212b" stroke-width="5"/>
+    <circle cx="690" cy="1195" r="48" fill="none" stroke="#17212b" stroke-width="4"/>
+    <circle cx="910" cy="1195" r="48" fill="none" stroke="#17212b" stroke-width="4"/>
+    <circle cx="690" cy="1195" r="18" fill="#17212b"/>
+    <circle cx="910" cy="1195" r="18" fill="#17212b"/>
+    <path class="ink heavy" d="M800 1240l-43 82 43 34 43-34z"/>
+    <path class="ink mid" d="M742 1379c40 26 79 39 118 39s78-13 118-39"/>
+
+    <g class="ink fine" opacity="0.85">
+      <path d="M560 1300c65 45 145 73 240 83 95-10 175-38 240-83"/>
+      <path d="M552 1360c73 54 156 87 248 99 92-12 175-45 248-99"/>
+      <path d="M568 1426c68 54 146 87 232 99 86-12 164-45 232-99"/>
+      <path d="M602 1490c56 42 122 68 198 78 76-10 142-36 198-78"/>
+      <path d="M649 1542c43 29 93 48 151 56 58-8 108-27 151-56"/>
+    </g>
+
+    <g class="ink hair" opacity="0.72">
+      <path d="M538 1120c93-61 185-90 276-87"/>
+      <path d="M515 1190c119-67 237-91 354-74"/>
+      <path d="M509 1260c134-55 268-67 402-36"/>
+      <path d="M521 1332c132-39 264-39 396 0"/>
+      <path d="M542 1402c114-23 228-12 342 32"/>
+      <path d="M1062 1120c-93-61-185-90-276-87"/>
+      <path d="M1085 1190c-119-67-237-91-354-74"/>
+      <path d="M1091 1260c-134-55-268-67-402-36"/>
+      <path d="M1079 1332c-132-39-264-39-396 0"/>
+      <path d="M1058 1402c-114-23-228-12-342 32"/>
+    </g>
+
+    <g class="ink fine" opacity="0.85">
+      <path d="M414 1360c-93-17-170-54-231-111"/>
+      <path d="M424 1430c-88 12-168 0-239-36"/>
+      <path d="M1186 1360c93-17 170-54 231-111"/>
+      <path d="M1176 1430c88 12 168 0 239-36"/>
+      <path d="M645 1583c-43 89-89 165-138 227"/>
+      <path d="M955 1583c43 89 89 165 138 227"/>
+      <path d="M507 1810c-54 34-114 47-180 39"/>
+      <path d="M1093 1810c54 34 114 47 180 39"/>
+    </g>
+
+    <!-- Token tiles and attention arcs. -->
+    <g transform="translate(308,1690)">
+      <rect x="0" y="0" width="984" height="164" rx="0" fill="#f5f0e4" stroke="#17212b" stroke-width="3"/>
+      <g class="mono" font-size="28" fill="#17212b">
+        <text x="44" y="65">我</text>
+        <text x="144" y="65">token</text>
+        <text x="286" y="65">Q</text>
+        <text x="380" y="65">K</text>
+        <text x="474" y="65">V</text>
+        <text x="568" y="65">loss</text>
+        <text x="716" y="65">cache</text>
+        <text x="872" y="65">eval</text>
+      </g>
+      <g stroke="#17212b" stroke-width="2" fill="none" opacity="0.82">
+        <path d="M50 104C130 12 285 12 365 104"/>
+        <path d="M286 104C390 16 550 16 654 104"/>
+        <path d="M474 104C586 30 728 30 840 104"/>
+      </g>
+      <g stroke="#17212b" stroke-width="2">
+        <path d="M109 0v164M246 0v164M342 0v164M436 0v164M530 0v164M676 0v164M830 0v164"/>
+      </g>
+    </g>
+  </g>
+
+  <text x="156" y="2130" fill="#fff8e9" class="serif" font-size="76" font-weight="700">江理子</text>
+  <text x="156" y="2206" fill="#d9cab2" class="sans" font-size="37">一本面向工程读者的语言模型系统书</text>
+  <text x="1228" y="2208" fill="#d9cab2" class="mono" font-size="33">2026</text>
+</svg>

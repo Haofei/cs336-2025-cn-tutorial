@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="320" viewBox="0 0 980 320" role="img" aria-labelledby="title desc">
+  <title id="title">文本到语言模型输出的 token 流程</title>
+  <desc id="desc">原始文本先经过 tokenizer 变成 token ids，再经过 embedding、Transformer 和 logits，最后采样得到下一个 token。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#526579"/>
+    </marker>
+    <style>
+      .box{fill:#f7f9fc;stroke:#8da0b6;stroke-width:2;rx:8}
+      .em{fill:#eaf2ff;stroke:#6685ad;stroke-width:2;rx:8}
+      .label{font:600 24px sans-serif;fill:#182231}
+      .small{font:18px sans-serif;fill:#4d5968}
+      .arrow{stroke:#526579;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect x="34" y="82" width="145" height="110" class="box"/>
+  <text x="106" y="126" text-anchor="middle" class="label">原始文本</text>
+  <text x="106" y="160" text-anchor="middle" class="small">字符串</text>
+  <path d="M185 137 H268" class="arrow"/>
+  <rect x="278" y="82" width="145" height="110" class="em"/>
+  <text x="350" y="126" text-anchor="middle" class="label">Tokenizer</text>
+  <text x="350" y="160" text-anchor="middle" class="small">切分 + 查表</text>
+  <path d="M429 137 H512" class="arrow"/>
+  <rect x="522" y="82" width="145" height="110" class="box"/>
+  <text x="594" y="126" text-anchor="middle" class="label">Token IDs</text>
+  <text x="594" y="160" text-anchor="middle" class="small">整数序列</text>
+  <path d="M594 198 V248 H106 V204" class="arrow"/>
+  <rect x="34" y="226" width="145" height="66" class="box"/>
+  <text x="106" y="266" text-anchor="middle" class="small">输出 token</text>
+  <path d="M673 137 H756" class="arrow"/>
+  <rect x="766" y="82" width="145" height="110" class="box"/>
+  <text x="838" y="120" text-anchor="middle" class="label">Embedding</text>
+  <text x="838" y="153" text-anchor="middle" class="small">[seq, hidden]</text>
+  <path d="M838 198 V248 H594 V204" class="arrow"/>
+  <rect x="522" y="226" width="145" height="66" class="em"/>
+  <text x="594" y="266" text-anchor="middle" class="small">Logits + 采样</text>
+  <rect x="766" y="226" width="145" height="66" class="box"/>
+  <text x="838" y="266" text-anchor="middle" class="small">Transformer</text>
+  <path d="M760 259 H676" class="arrow"/>
+</svg>

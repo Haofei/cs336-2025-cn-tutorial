@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+  <title id="title">Self-attention 的核心张量形状</title>
+  <desc id="desc">输入张量从 batch sequence hidden 变成 Q K V，再生成 scores，经过 softmax 与 V 相乘回到上下文表示。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#526579"/>
+    </marker>
+    <style>
+      .box{fill:#f7f9fc;stroke:#8da0b6;stroke-width:2;rx:8}
+      .hot{fill:#fff4e6;stroke:#b98242;stroke-width:2;rx:8}
+      .cool{fill:#eaf2ff;stroke:#6685ad;stroke-width:2;rx:8}
+      .label{font:600 24px sans-serif;fill:#182231}
+      .small{font:18px sans-serif;fill:#4d5968}
+      .arrow{stroke:#526579;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect x="55" y="62" width="190" height="92" class="box"/>
+  <text x="150" y="100" text-anchor="middle" class="label">输入 X</text>
+  <text x="150" y="132" text-anchor="middle" class="small">[B, S, H]</text>
+  <path d="M252 108 H334" class="arrow"/>
+  <rect x="344" y="38" width="160" height="68" class="cool"/>
+  <text x="424" y="80" text-anchor="middle" class="small">Q [B, h, S, d]</text>
+  <rect x="344" y="126" width="160" height="68" class="cool"/>
+  <text x="424" y="168" text-anchor="middle" class="small">K [B, h, S, d]</text>
+  <rect x="344" y="214" width="160" height="68" class="cool"/>
+  <text x="424" y="256" text-anchor="middle" class="small">V [B, h, S, d]</text>
+  <path d="M512 72 C570 72 582 122 630 122" class="arrow"/>
+  <path d="M512 160 C570 160 582 134 630 134" class="arrow"/>
+  <rect x="640" y="82" width="210" height="92" class="hot"/>
+  <text x="745" y="119" text-anchor="middle" class="label">QK^T</text>
+  <text x="745" y="151" text-anchor="middle" class="small">scores [B, h, S, S]</text>
+  <path d="M745 182 V232" class="arrow"/>
+  <rect x="640" y="242" width="210" height="74" class="box"/>
+  <text x="745" y="286" text-anchor="middle" class="small">softmax + causal mask</text>
+  <path d="M640 280 H514" class="arrow"/>
+  <path d="M505 248 H592 C620 248 625 280 640 280" class="arrow"/>
+  <rect x="344" y="326" width="506" height="62" class="cool"/>
+  <text x="597" y="364" text-anchor="middle" class="small">attention output [B, S, H]</text>
+  <path d="M745 322 C745 350 710 357 858 357" class="arrow"/>
+</svg>

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  line-height: 1.72;
+}
+
+body {
+  color: #202124;
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", serif;
+  hyphens: auto;
+  margin: 0 8%;
+  padding: 0;
+  text-align: left;
+  widows: 2;
+  orphans: 2;
+}
+
+h1,
+h2 {
+  color: #111827;
+  font-family: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Heiti SC", sans-serif;
+  font-weight: 700;
+  line-height: 1.28;
+  text-align: left;
+}
+
+h1 {
+  border-bottom: 1px solid #d8dee9;
+  font-size: 1.62em;
+  margin: 2.4em 0 1.3em;
+  padding-bottom: 0.42em;
+  break-after: avoid;
+  page-break-before: always;
+  page-break-after: avoid;
+}
+
+h2 {
+  color: #243044;
+  font-size: 1.18em;
+  margin: 1.8em 0 0.9em;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 0.92em;
+  text-indent: 0;
+}
+
+p > strong:only-child {
+  break-after: avoid;
+  color: #243044;
+  display: block;
+  font-family: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Heiti SC", sans-serif;
+  font-size: 1.02em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 1.3em 0 0.35em;
+  page-break-after: avoid;
+}
+
+figure {
+  break-inside: avoid;
+  margin: 1.45em 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  color: #5a6472;
+  font-family: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Heiti SC", sans-serif;
+  font-size: 0.88em;
+  line-height: 1.5;
+  margin-top: 0.45em;
+  text-align: left;
+}
+
+blockquote {
+  break-inside: avoid;
+  border-left: 3px solid #9aa7b8;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  color: #4a5566;
+  font-size: 0.95em;
+  font-style: normal;
+  margin: 0.2em 0 1.55em 0.45em;
+  page-break-inside: avoid;
+  padding: 0.18em 0 0.18em 1em;
+  text-align: left;
+  -webkit-column-break-inside: avoid;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+code {
+  font-family: "JetBrains Mono", "Iosevka", "SFMono-Regular", "Cascadia Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.92em;
+  word-break: break-word;
+}
+
+pre {
+  background: #f5f7fa;
+  border: 1px solid #e1e7ef;
+  border-radius: 4px;
+  break-inside: avoid;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  font-size: 0.86em;
+  line-height: 1.55;
+  margin: 1.15em 0;
+  overflow-x: auto;
+  overflow-wrap: break-word;
+  page-break-inside: avoid;
+  padding: 0.85em 0.95em;
+  white-space: pre-wrap;
+  word-break: break-word;
+  -webkit-column-break-inside: avoid;
+}
+
+pre code {
+  word-break: inherit;
+}
+
+.case-study,
+.note,
+.warning,
+.deep-dive {
+  break-inside: avoid;
+  border-left: 4px solid #7b8ba3;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  margin: 1.25em 0;
+  page-break-inside: avoid;
+  padding: 0.85em 1em;
+  -webkit-column-break-inside: avoid;
+}
+
+.case-study,
+.note,
+.deep-dive {
+  background: #f7f9fc;
+}
+
+.warning {
+  background: #fff8ed;
+  border-left-color: #b98242;
+}
+
+ul,
+ol {
+  margin: 0.8em 0 1em 1.5em;
+  padding: 0;
+}
+
+li {
+  margin: 0.25em 0;
+}
+
+a {
+  color: #255f99;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #d8dee9;
+  margin: 2em 0;
+}
+
+nav#toc,
+nav[epub|type~="toc"] {
+  font-family: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Heiti SC", sans-serif;
+}
+
+nav#toc ol,
+nav[epub|type~="toc"] ol {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav#toc ol ol,
+nav[epub|type~="toc"] ol ol {
+  margin: 0.35em 0 0.7em 1.2em;
+}
+
+nav#toc li,
+nav[epub|type~="toc"] li {
+  margin: 0.34em 0;
+}

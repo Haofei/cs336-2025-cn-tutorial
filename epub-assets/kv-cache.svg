@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="380" viewBox="0 0 980 380" role="img" aria-labelledby="title desc">
+  <title id="title">Prefill、Decode 与 KV cache</title>
+  <desc id="desc">Prefill 并行处理 prompt 并写入 KV cache，decode 每次只追加一个新 token 的 K/V，缓存随序列长度增长。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#526579"/>
+    </marker>
+    <style>
+      .box{fill:#f7f9fc;stroke:#8da0b6;stroke-width:2;rx:8}
+      .cache{fill:#eaf2ff;stroke:#6685ad;stroke-width:2;rx:8}
+      .new{fill:#fff4e6;stroke:#b98242;stroke-width:2;rx:8}
+      .label{font:600 24px sans-serif;fill:#182231}
+      .small{font:18px sans-serif;fill:#4d5968}
+      .arrow{stroke:#526579;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect x="55" y="68" width="260" height="92" class="box"/>
+  <text x="185" y="105" text-anchor="middle" class="label">Prefill</text>
+  <text x="185" y="137" text-anchor="middle" class="small">prompt tokens 并行计算</text>
+  <path d="M322 114 H405" class="arrow"/>
+  <rect x="415" y="58" width="250" height="112" class="cache"/>
+  <text x="540" y="98" text-anchor="middle" class="label">KV Cache</text>
+  <text x="540" y="130" text-anchor="middle" class="small">每层保存历史 K/V</text>
+  <text x="540" y="155" text-anchor="middle" class="small">[layers, heads, seq, d]</text>
+  <path d="M540 178 V226" class="arrow"/>
+  <rect x="415" y="236" width="250" height="82" class="new"/>
+  <text x="540" y="270" text-anchor="middle" class="label">Decode step</text>
+  <text x="540" y="300" text-anchor="middle" class="small">一次追加 1 个 token</text>
+  <path d="M672 277 H785" class="arrow"/>
+  <rect x="795" y="236" width="130" height="82" class="box"/>
+  <text x="860" y="270" text-anchor="middle" class="label">输出</text>
+  <text x="860" y="300" text-anchor="middle" class="small">next token</text>
+  <path d="M795 250 C746 185 700 128 672 114" class="arrow"/>
+  <text x="490" y="356" class="small" text-anchor="middle">上下文越长，cache 越大；batch 越杂，调度越难。</text>
+</svg>
